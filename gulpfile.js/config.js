@@ -28,7 +28,7 @@ module.exports = {
   sass: {
     src: src + "/sass/*.{sass,scss}",
     watch: src + "/sass/**/*.{sass,scss}",
-    public: public + "/sass",
+    public: public + "/css",
   },
 
   js: {
