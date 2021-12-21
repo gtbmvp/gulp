@@ -6,7 +6,7 @@ const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const cssimport = require("gulp-cssimport");
 const groupCssMedia = require("gulp-group-css-media-queries");
-const webpCss = require("gulp-webp-css");
+const webpCss = require("gulp-webp-css-fixed");
 
 //CONFIG
 const config = require("../config");
