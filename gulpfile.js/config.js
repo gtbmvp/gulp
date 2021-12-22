@@ -37,8 +37,8 @@ module.exports = {
     public: public + "/js",
   },
   img: {
-    src: src + "/img/*.{png,svg,jpg,jpeg,gif}",
-    watch: src + "/img/**/*.{png,svg,jpg,jpeg,gif}",
+    src: src + "/img/*.{png,webp,jpg,jpeg,gif}",
+    watch: src + "/img/**/*.{png,webp,jpg,jpeg,gif}",
     public: public + "/img",
   },
 
