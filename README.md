@@ -39,6 +39,7 @@
   - minify (if _production_);
 - FONT:
   - convert ttf to woff and woff2;
+  - generate CSS file with @font-face rules;
 - IMG:
   - convert to webp image format;
   - minify (if _production_);
