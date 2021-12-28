@@ -1,6 +1,6 @@
 {
   "name": "ggulp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.ejs",
   "scripts": {
@@ -37,6 +37,8 @@
     "gulp-cssimport": "^7.0.0",
     "gulp-csso": "^4.0.1",
     "gulp-ejs": "^5.1.0",
+    "gulp-fonter": "^0.3.0",
+    "gulp-fontfacegen": "^1.0.0",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-if": "^3.0.0",
@@ -45,7 +47,6 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.0.0",
     "gulp-svg-sprite": "^1.5.0",
-    "gulp-ttf2woff": "^1.1.1",
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1",

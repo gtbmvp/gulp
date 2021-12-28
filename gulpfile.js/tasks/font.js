@@ -1,8 +1,8 @@
 //PACKAGES
 const { src, dest } = require("gulp");
-const newer = require("gulp-newer");
-const ttf2woff = require("gulp-ttf2woff");
+const fonter = require("gulp-fonter");
 const ttf2woff2 = require("gulp-ttf2woff2");
+const fontfacegen = require("gulp-fontfacegen");
 
 //CONFIG
 const config = require("../config");
@@ -10,11 +10,12 @@ const config = require("../config");
 // FONT TASK
 module.exports = () => {
   return src(config.font.src)
-    .pipe(newer(config.font.public))
-    .pipe(ttf2woff())
-    .pipe(dest(config.font.public))
-    .pipe(src(config.font.src))
-    .pipe(newer(config.font.public))
+    .pipe(
+      fonter({
+        formats: ["ttf", "woff"],
+      })
+    )
     .pipe(ttf2woff2())
-    .pipe(dest(config.font.public));
+    .pipe(dest(config.font.public))
+    .pipe(fontfacegen({ filepath: config.css.public }));
 };
