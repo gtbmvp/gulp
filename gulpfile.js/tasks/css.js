@@ -1,6 +1,5 @@
 //PACKAGES
 const { src, dest } = require("gulp");
-const concat = require("gulp-concat");
 const autoprefixer = require("gulp-autoprefixer");
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
@@ -14,7 +13,6 @@ const config = require("../config");
 // CSS TASK
 module.exports = () => {
   return src(config.css.src, { sourcemaps: config.isDevelopment })
-    .pipe(concat("main.css"))
     .pipe(cssimport())
     .pipe(webpCss())
     .pipe(autoprefixer())

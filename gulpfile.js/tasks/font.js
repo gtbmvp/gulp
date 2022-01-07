@@ -16,6 +16,6 @@ module.exports = () => {
       })
     )
     .pipe(ttf2woff2())
-    .pipe(dest(config.font.public))
-    .pipe(fontfacegen({ filepath: config.css.public }));
+    .pipe(fontfacegen())
+    .pipe(dest(config.font.public));
 };
