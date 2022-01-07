@@ -43,7 +43,7 @@ const watcher = () => {
 //PRODUCTION or DEVELOPMENT
 const production = series(
   clear,
-  parallel(html, ejs, font, css, sass, js, img, svg)
+  parallel(html, ejs, series(font, css, sass), js, img, svg)
 );
 const development = series(production, parallel(watcher, server));
 
