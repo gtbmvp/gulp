@@ -2,7 +2,7 @@
 const { src, dest } = require("gulp");
 const rename = require("gulp-rename");
 const ejs = require("gulp-ejs");
-const webpHtml = require("gulp-webp-html-nosvg");
+const webpHtml = require("gulp-webp-html");
 const htmlmin = require("gulp-htmlmin");
 
 //CONFIG
