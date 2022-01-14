@@ -1,6 +1,6 @@
 {
   "name": "ggulp",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "main": "index.ejs",
   "scripts": {
@@ -50,7 +50,7 @@
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1",
     "gulp-webp-css-fixed": "^1.0.1",
-    "gulp-webp-html": "^1.0.2",
+    "gulp-webp-html-fixed": "^1.0.0",
     "sass": "^1.45.0"
   }
 }

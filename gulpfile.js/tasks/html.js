@@ -1,7 +1,7 @@
 //PACKAGES
 const { src, dest } = require("gulp");
 const htmlmin = require("gulp-htmlmin");
-const webpHtml = require("gulp-webp-html");
+const webpHtml = require("gulp-webp-html-fixed");
 
 //CONFIG
 const config = require("../config");
