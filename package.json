@@ -1,6 +1,6 @@
 {
   "name": "ggulp",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
   "main": "index.ejs",
   "scripts": {
@@ -37,7 +37,7 @@
     "gulp-csso": "^4.0.1",
     "gulp-ejs": "^5.1.0",
     "gulp-fonter": "^0.3.0",
-    "gulp-fontfacegen": "^1.0.5",
+    "gulp-fontfacegen": "^1.0.6",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-if": "^3.0.0",
