@@ -44,7 +44,7 @@ module.exports = {
 
   svg: {
     src: src + "/img/svg/*.svg",
-    watch: src + "img/svg/**/*.svg",
+    watch: src + "/img/svg/**/*.svg",
     public: public + "/img/svg",
   },
 
