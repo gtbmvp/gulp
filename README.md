@@ -36,7 +36,7 @@
   - saving both minified and not minified versions;
 - JS:
   - babel with _@babel/preset-env_ preset;
-  - minify (if _production_);
+  - webpack bundling with minification (if _production_);
 - FONT:
   - convert ttf to woff and woff2;
   - generate CSS file with @font-face rules;

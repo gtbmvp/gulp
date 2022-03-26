@@ -1,8 +1,7 @@
 //PACKAGES
 const { src, dest } = require("gulp");
 const babel = require("gulp-babel");
-const uglify = require("gulp-uglify-es").default;
-const gulpIf = require("gulp-if");
+const webpack = require("webpack-stream");
 
 //CONFIG
 const config = require("../config");
@@ -11,6 +10,10 @@ const config = require("../config");
 module.exports = () => {
   return src(config.js.src, { sourcemaps: config.isDevelopment })
     .pipe(babel())
-    .pipe(gulpIf(config.isProduction, uglify()))
+    .pipe(
+      webpack({
+        mode: config.isDevelopment ? "development" : "production",
+      })
+    )
     .pipe(dest(config.js.public, { sourcemaps: config.isDevelopment }));
 };
