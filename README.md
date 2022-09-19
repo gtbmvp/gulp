@@ -45,3 +45,18 @@
   - minify (if _production_);
 - SVG:
   - create SVG stack sprite with its _html_ example;
+  - PLAN2DO: with release of svg-sprite 2.0.0 add `rootviewbox: false` option:
+```
+svgSprite({
+        mode: {
+          stack: {
+            sprite: "../icons.svg",
+            example: {
+              dest: "../html-example.html",
+            },
+            rootviewbox: false
+          },
+        },
+      })
+```
+ 
