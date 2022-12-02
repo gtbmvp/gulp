@@ -9,7 +9,7 @@ const gulpIf = require("gulp-if");
 const config = require("../config");
 
 // IMG TASK
-module.exports = () => {
+module.exports = img_task = () => {
   return src(config.img.src)
     .pipe(newer(config.img.public))
     .pipe(webp())

@@ -1,15 +1,16 @@
 //PACKAGES
 const { src, dest } = require("gulp");
-const webpack = require("webpack-stream");
+const webpackStream = require("webpack-stream");
+// const webpack = require("webpack") // for jQuery usage install webpack and jQuery
 
 //CONFIG
 const config = require("../config");
 
 // JS TASK
-module.exports = () => {
+module.exports = js_task = () => {
   return src(config.js.src, { sourcemaps: config.isDevelopment })
     .pipe(
-      webpack({
+      webpackStream({
         module: {
           rules: [
             {
@@ -28,6 +29,11 @@ module.exports = () => {
         output: {
           filename: "bundle.js",
         },
+        // // for jQuery usage
+        // plugins: [
+        //   new webpack.ProvidePlugin({
+        //       $: 'jquery',
+        //   })
       })
     )
     .pipe(dest(config.js.public, { sourcemaps: config.isDevelopment }));

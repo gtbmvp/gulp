@@ -9,7 +9,7 @@ const htmlmin = require("gulp-htmlmin");
 const config = require("../config");
 
 // EJS TASK
-module.exports = () => {
+module.exports = ejs_task = () => {
   return src(config.ejs.src)
     .pipe(ejs({ title: "EXAMPLE" }))
     .pipe(rename({ extname: ".html" }))

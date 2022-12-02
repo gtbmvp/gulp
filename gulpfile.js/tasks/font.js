@@ -8,7 +8,7 @@ const fontfacegen = require("gulp-fontfacegen");
 const config = require("../config");
 
 // FONT TASK
-module.exports = () => {
+module.exports = font_task = () => {
   return src(config.font.src)
     .pipe(
       fonter({

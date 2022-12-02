@@ -11,7 +11,7 @@ const webpCss = require("gulp-webp-css-fixed");
 const config = require("../config");
 
 // CSS TASK
-module.exports = () => {
+module.exports = css_task = () => {
   return src(config.css.src, { sourcemaps: config.isDevelopment })
     .pipe(cssimport())
     .pipe(webpCss())

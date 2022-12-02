@@ -6,7 +6,7 @@ const svgSprite = require("gulp-svg-sprite");
 const config = require("../config");
 
 // SVG TASK
-module.exports = () => {
+module.exports = svg_task = () => {
   return src(config.svg.src)
     .pipe(
       svgSprite({
@@ -16,7 +16,7 @@ module.exports = () => {
             example: {
               dest: "../html-example.html",
             },
-            rootviewbox: false
+            rootviewbox: false,
           },
         },
       })

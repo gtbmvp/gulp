@@ -7,7 +7,7 @@ const webpHtml = require("gulp-webp-html-fixed");
 const config = require("../config");
 
 // HTML TASK
-module.exports = () => {
+module.exports = html_task = () => {
   return src(config.html.src)
     .pipe(webpHtml())
     .pipe(htmlmin({ collapseWhitespace: config.isProduction }))

@@ -37,6 +37,7 @@
 - JS:
   - webpack bundling with minification (if _production_);
   - webpack babel-loader with _@babel/preset-env_ preset;
+  - optional _jQuery_ usage;
 - FONT:
   - convert ttf to woff and woff2;
   - generate CSS file with @font-face rules;
@@ -45,3 +46,5 @@
   - minify (if _production_);
 - SVG:
   - create SVG stack sprite with its _html_ example;
+
+
