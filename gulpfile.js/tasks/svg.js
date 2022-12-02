@@ -16,6 +16,7 @@ module.exports = () => {
             example: {
               dest: "../html-example.html",
             },
+            rootviewbox: false
           },
         },
       })
