@@ -29,7 +29,7 @@ module.exports = js_task = () => {
         output: {
           filename: "bundle.js",
         },
-        // for jQuery usage
+        // // for jQuery usage
         // plugins: [
         //   new webpack.ProvidePlugin({
         //     $: "jquery",
